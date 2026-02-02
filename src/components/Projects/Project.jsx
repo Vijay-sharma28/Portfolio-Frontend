@@ -8,7 +8,7 @@ const Project = () => {
         <div id='projects'>
             <Heading data="Projects" />
             <div className="project-grid">
-                <ProjectCard img="../../resourses/grocery-shop.png" link="https://pawanbuildmart.gt.tc/" title="Grocery Shop" tech="html/css/js/php/mysql" />
+                <ProjectCard img="../../resourses/Grocery-shop.png" link="https://pawanbuildmart.gt.tc/" title="Grocery Shop" tech="html/css/js/php/mysql" />
                 <ProjectCard img="../../resourses/online-attendance-system.png" link="https://online-attendance-system.gt.tc/" title="Online Attendance System" tech="html/css/js/php/mysql" />
                 <ProjectCard img="../../resourses/netflix-clone.png" link="https://netflix-clone-xi-ten-34.vercel.app/" title="Netflix clone" tech="html/css" />
                 <ProjectCard img="../../resourses/tic-tac-toe.png" link="https://tic-tac-toe-mauve-phi.vercel.app/" title="Tic-Tac-Toe" tech="html/css/js" />

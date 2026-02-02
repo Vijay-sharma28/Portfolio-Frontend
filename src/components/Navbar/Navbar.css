@@ -38,7 +38,13 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+.nav-bar ul li{
+  transition: all 0.5s ease;
+}
 
+.nav-bar ul li:hover{
+  transform: scale(1.1);
+}
 
 .nav-bar ul li a {
   padding-bottom: 5px;
