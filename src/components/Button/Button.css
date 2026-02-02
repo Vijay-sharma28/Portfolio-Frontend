@@ -1,0 +1,15 @@
+.btn {
+    margin: 1rem 0;
+    padding: 1em 2em;
+    border: 1px solid;
+    /* border-radius: 6px; */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}

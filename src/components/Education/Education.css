@@ -1,0 +1,25 @@
+#education{
+    width: 70vw;
+    margin: 1rem auto;
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    box-shadow: 0px 0px 20px 2px #00000095;
+}
+.edu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+@media screen and (max-width: 800px) {
+    .edu-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    #education{
+        width: 80vw;
+    }
+    .edu-grid{
+        grid-template-columns: 1fr;
+    }
+}

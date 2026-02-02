@@ -1,0 +1,126 @@
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --padding-left: 10rem;
+}
+
+.header {
+  height: 70px;
+  background-color: #d3d3d3;
+  font-size: 1.5rem;
+  padding: 3rem 5rem 3rem var(--padding-left);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid; */
+}
+
+.logo img{
+  width: 100%;
+}
+
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.nav-bar ul li a {
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.nav-bar ul li a.active {
+  border-bottom: 2px solid black;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width:850px) {
+  .header {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  :root {
+    --padding-left: 3rem;
+  }
+  .header{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: #d3d3d3;
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    top: 6rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav-bar ul li a {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar ul.display-nav {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 2rem 0;
+  }
+
+  .hamburger {
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+}

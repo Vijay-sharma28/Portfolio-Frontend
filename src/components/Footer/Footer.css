@@ -1,0 +1,15 @@
+.footer-icons{
+    background-color: #d3d3d3;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-icons i{
+    font-size: 2rem;
+}
+.foot-data{
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+}

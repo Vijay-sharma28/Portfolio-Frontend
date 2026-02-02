@@ -1,0 +1,22 @@
+#skills{
+    padding: 3rem 0;
+}
+.skills-grid{
+    /* padding: 3rem 18rem; */
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 30px auto;
+}
+@media screen and (max-width: 700px) {
+    .skills-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 550px) {
+    .skills-grid{
+        grid-template-columns: 1fr;
+        width: 75vw;
+    }
+}

@@ -1,0 +1,11 @@
+.about-data{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: grey;
+}
+.data{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}

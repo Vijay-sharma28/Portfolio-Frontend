@@ -1,0 +1,41 @@
+#about{
+    padding: 2rem 0;
+}
+.all-about{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center ;
+    gap: 1rem;
+}
+.all-about img{
+    width: 24rem;
+}
+.hero-content{
+    width: 52%;
+    margin-top: 2rem;
+    /* margin-left: 13rem; */
+}
+.about-heading{
+    font-size: 2rem;
+}
+.about-content{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.data-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+    .all-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content{
+        width: 85vw;
+    }
+    .all-about img{
+        width: 34rem;
+    }
+}

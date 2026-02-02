@@ -1,0 +1,33 @@
+#projects{
+    padding: 4rem 0;
+    margin: auto;
+    width: 70vw;
+}
+.project-grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    position: relative;
+}
+@media screen and (max-width: 1300px) {
+    #projects{
+        width: 85vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    #projects{
+        width: 70vw;
+    }
+    .project-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    #projects{
+        width: 90vw;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+}

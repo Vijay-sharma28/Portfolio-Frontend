@@ -1,0 +1,12 @@
+.main-about{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.lines{
+    text-align: center;
+}
+.lines img{
+    width: 7rem;
+}

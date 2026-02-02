@@ -1,0 +1,18 @@
+.education-card{
+    margin-top: 1.5rem;
+    padding: 2rem 0.5rem;
+    text-align: center;
+}
+.edu-img{
+    width: 5rem;
+    height: 4rem;
+    margin-bottom: 0.6rem;
+}
+.education-card p{
+    margin-top: 0.6rem;
+}
+@media screen and (max-width: 600px) {
+    .education-card{
+        padding: 0rem 2rem;
+    }
+}

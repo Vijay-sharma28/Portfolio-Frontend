@@ -1,0 +1,76 @@
+#card {
+    margin: auto;
+    position: relative;
+    height: 24rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.project-img {
+    width: 20rem;
+    height: 28rem;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#card:hover .overlay {
+    opacity: 1;
+}
+
+.title {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title,
+.tech {
+    text-transform: uppercase;
+}
+
+.tech {
+    margin-top: 5px;
+}
+
+.view {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 40%;
+    margin-top: 3rem;
+}
+
+.view:hover {
+    box-shadow: 0 0 15px white;
+    color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    #card{
+        height: 30rem;
+    }
+    .project-img {
+    width: 24rem;
+    height: 30rem;
+    object-fit: cover;
+}
+}
