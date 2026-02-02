@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className="inputs">
                     <input className='input' {...register("Name", {required: "Name is required", minLength: {value: 3, message: "Minimum 3 characters"}, maxLength: { value: 20, message: "Too long" }})} type="text" placeholder='Name'  />
                     {errors.Name && <div className='error'>{errors.Name.message}</div>}
-                    <input className='input' {...register("email", {required: "Name is required", pattern: {value: /^\S+@\S+$/i, message: "Invalid email"}})} type="email" placeholder='Email'  />
+                    <input disabled={isSubmitting} className='input' {...register("email", {required: "Name is required", pattern: {value: /^\S+@\S+$/i, message: "Invalid email"}})} type="email" placeholder='Email'  />
                 </div>
                 <textarea {...register("message", {required: "Message is required"})} rows={10} placeholder='Message'></textarea>
                 {errors.message && <div className="error">{errors.message.message}</div>}
