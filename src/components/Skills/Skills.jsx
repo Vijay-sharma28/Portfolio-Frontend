@@ -12,6 +12,7 @@ const Skills = () => {
                 <SkillsCard img="resourses/css-img.png" title="CSS3" />
                 <SkillsCard img="resourses/js-img.png" title="Javascript" />
                 <SkillsCard img="resourses/reactjs-img.png" title="reactjs" />
+                <SkillsCard img="resourses/reactjs-img.png" title="reactjs" />
                 <SkillsCard img="resourses/mysql-img.png" title="Mysql  " />
                 <SkillsCard img="resourses/php-img.png" title="php" />
                 <SkillsCard img="resourses/figma-img.png" title="figma" />
